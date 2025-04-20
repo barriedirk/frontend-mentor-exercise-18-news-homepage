@@ -1,0 +1,105 @@
+/* General styles */
+.header {
+  background-color: #fff;
+  padding: 1rem;
+  position: relative;
+}
+
+.header__nav {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header__menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.header__menu-item {
+  position: relative;
+}
+
+.header__menu-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+}
+
+.header__menu-link:hover,
+.header__menu-link:focus {
+  color: #007bff;
+  outline: none;
+}
+
+/* Hamburger Icon - hidden by default on desktop */
+.header__menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon lines */
+.header__menu-icon {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 25px;
+}
+
+.header__icon-line {
+  background-color: #333;
+  height: 4px;
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* Mobile styles (Hamburger and vertical menu) */
+@media (max-width: 768px) {
+  /* Show hamburger icon */
+  .header__menu-icon {
+    display: flex;
+  }
+
+  /* Hide menu items on mobile by default */
+  .header__menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #fff;
+    padding: 10px 0;
+  }
+
+  .header__menu-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Show menu when checkbox is checked */
+  .header__menu-toggle:checked + .header__menu-icon + .header__menu {
+    display: flex;
+  }
+}
+
+/* Desktop styles (Horizontal menu) */
+@media (min-width: 769px) {
+  .header__menu {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: row;
+  }
+
+  .header__menu-item {
+    text-align: left;
+  }
+
+  /* Hide hamburger icon on desktop */
+  .header__menu-icon {
+    display: none;
+  }
+}
