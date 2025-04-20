@@ -1,13 +1,21 @@
-/* General styles */
 .header {
   background-color: #fff;
   padding: 1rem;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 44.8px;
+  height: 28px;
 }
 
 .header__nav {
   max-width: 1200px;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .header__menu {
@@ -34,27 +42,26 @@
   outline: none;
 }
 
-/* Hamburger Icon - hidden by default on desktop */
 .header__menu-toggle {
   display: none;
 }
 
-/* Hamburger icon lines */
 .header__menu-icon {
   display: none;
   cursor: pointer;
   flex-direction: column;
   justify-content: space-around;
-  width: 30px;
-  height: 25px;
+  width: 40px;
+  height: 17px;
 }
 
+/*
 .header__icon-line {
   background-color: #333;
   height: 4px;
   width: 100%;
   border-radius: 4px;
-}
+} */
 
 /* Mobile styles (Hamburger and vertical menu) */
 @media (max-width: 768px) {
@@ -63,7 +70,6 @@
     display: flex;
   }
 
-  /* Hide menu items on mobile by default */
   .header__menu {
     display: none;
     flex-direction: column;
@@ -80,13 +86,11 @@
     text-align: center;
   }
 
-  /* Show menu when checkbox is checked */
   .header__menu-toggle:checked + .header__menu-icon + .header__menu {
     display: flex;
   }
 }
 
-/* Desktop styles (Horizontal menu) */
 @media (min-width: 769px) {
   .header__menu {
     display: flex;
