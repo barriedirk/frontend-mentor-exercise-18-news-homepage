@@ -56,8 +56,6 @@
     <link rel="stylesheet" href="./main.css" />
     <link rel="stylesheet" href="./header.css" />
 
-    <script type="module" src="./main.js"></script>
-
     <style>
       .attribution {
         font-size: 1rem;
@@ -83,6 +81,7 @@
         aria-label="Primary navigation"
       >
         <input type="checkbox" id="menu-toggle" class="header__menu-toggle" />
+
         <label
           for="menu-toggle"
           class="header__menu-icon"
@@ -95,24 +94,39 @@
           />
         </label>
 
-        <!-- Menu -->
-        <ul class="header__menu">
-          <li class="header__menu-item">
-            <a href="#" class="header__menu-link">Home</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#" class="header__menu-link">New</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#" class="header__menu-link">Popular</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#" class="header__menu-link">Trending</a>
-          </li>
-          <li class="header__menu-item">
-            <a href="#" class="header__menu-link">Categories</a>
-          </li>
-        </ul>
+        <div class="header__menu--overlay"></div>
+
+        <div class="header__menu--wrapper">
+          <label
+            for="menu-toggle"
+            class="header__menu-icon--close"
+            aria-label="Toggle menu"
+          >
+            <img
+              class="header__menu-icon--close--image"
+              src="./assets/images/icon-menu-close.svg"
+              alt="Icon Close of Menu Navigation"
+            />
+          </label>
+
+          <ul class="header__menu">
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Home</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">New</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Popular</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Trending</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#" class="header__menu-link">Categories</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
