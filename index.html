@@ -52,9 +52,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./reset.css" />
-    <link rel="stylesheet" href="./main.css" />
-    <link rel="stylesheet" href="./header.css" />
+    <link rel="stylesheet" href="./bundle.css" />
 
     <style>
       .attribution {
@@ -70,16 +68,16 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <header class="header">
-      <img
-        class="header__logo"
-        src="./assets/images/logo.svg"
-        alt="Image of the Company Logo"
-      />
-      <nav
-        class="header__nav"
-        role="navigation"
-        aria-label="Primary navigation"
-      >
+      <a href="/index.html" class="header__logo--link">
+        <img
+          class="header__logo"
+          src="./assets/images/logo.svg"
+          alt="Image of the Company Logo"
+        />
+        <span class="visually-hidden">Return to Home</span>
+      </a>
+
+      <nav class="header__nav" aria-label="Primary navigation">
         <input type="checkbox" id="menu-toggle" class="header__menu-toggle" />
 
         <label
@@ -131,15 +129,11 @@
     </header>
 
     <main id="main-content" class="main">
-      <section aria-labelledby="web3-title" class="hero">
+      <section aria-labelledby="hero__title" class="hero">
         <picture class="hero__picture">
           <source
             media="(max-width: 768px)"
             srcset="./assets/images/image-web-3-mobile.jpg"
-          />
-          <source
-            media="(min-width: 769px)"
-            srcset="./assets/images/image-web-3-desktop.jpg"
           />
           <img
             class="hero__image"
