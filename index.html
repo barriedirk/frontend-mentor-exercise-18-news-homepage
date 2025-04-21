@@ -70,6 +70,7 @@
   </head>
   <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <header class="header">
       <img
         class="header__logo"
@@ -133,25 +134,31 @@
           />
         </picture>
         <h1 class="hero__title">The Bright Future of Web 3.0?</h1>
-        <p class="hero__description">
-          We dive into the next evolution of the web that claims to put the
-          power of the platforms back into the hands of the people. But is it
-          really fulfilling its promise?
-        </p>
+        <div class="hero__content">
+          <p class="hero__description">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
 
-        <a
-          class="hero__cta"
-          href="#"
-          aria-label="Read more about The Bright Future of Web 3.0"
-          >Read more</a
-        >
+          <a
+            class="hero__cta"
+            href="#"
+            aria-label="Read more about The Bright Future of Web 3.0"
+            >Read more</a
+          >
+        </div>
       </section>
 
       <aside class="news" aria-labelledby="news__title">
         <h2 id="news__title" class="news__title">New</h2>
 
         <div class="news__articles">
-          <article class="news__article" aria-labelledby="article-1">
+          <article
+            class="news__article"
+            aria-labelledby="article-1"
+            tabindex="0"
+          >
             <h3 id="article-1" class="news__article-title">
               Hydrogen VS Electric Cars
             </h3>
@@ -160,7 +167,11 @@
             </p>
           </article>
 
-          <article class="news__article" aria-labelledby="article-2">
+          <article
+            class="news__article"
+            aria-labelledby="article-2"
+            tabindex="0"
+          >
             <h3 id="article-2" class="news__article-title">
               The Downsides of AI Artistry
             </h3>
@@ -170,7 +181,11 @@
             </p>
           </article>
 
-          <article class="news__article" aria-labelledby="article-3">
+          <article
+            class="news__article"
+            aria-labelledby="article-3"
+            tabindex="0"
+          >
             <h3 id="article-3" class="news__article-title">
               Is VC Funding Drying Up?
             </h3>
@@ -193,7 +208,11 @@
           Featured Articles
         </h2>
 
-        <article class="featured-articles__item" aria-labelledby="article-1">
+        <article
+          class="featured-articles__item"
+          aria-labelledby="article-1"
+          tabindex="0"
+        >
           <figure class="featured-articles__item-image">
             <img
               src="./assets/images/image-retro-pcs.jpg"
@@ -212,7 +231,11 @@
           </figure>
         </article>
 
-        <article class="featured-articles__item" aria-labelledby="article-2">
+        <article
+          class="featured-articles__item"
+          aria-labelledby="article-2"
+          tabindex="0"
+        >
           <figure class="featured-articles__item-image">
             <img
               src="./assets/images/image-top-laptops.jpg"
@@ -231,11 +254,15 @@
           </figure>
         </article>
 
-        <article class="featured-articles__item" aria-labelledby="article-3">
+        <article
+          class="featured-articles__item"
+          aria-labelledby="article-3"
+          tabindex="0"
+        >
           <figure class="featured-articles__item-image">
             <img
-              src="./assets/images/image-top-laptops.jpg"
-              alt="Illustration of Top 10 laptops"
+              src="./assets/images/image-gaming-growth.jpg"
+              alt="Illustration of Top Gaming Growth"
               class="featured-articles__item-img"
             />
             <figcaption class="featured-articles__item-caption">
